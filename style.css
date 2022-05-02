@@ -311,6 +311,22 @@ html {
         margin: 15px 0;
     }
 
+    .photo-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    
+    .brides-photo img {
+        margin-top: 50px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #e4e4e4;
+        border: 4px solid #ffd080;
+    }
+
     .splitter {
         margin: 100px 0;
     }
@@ -338,6 +354,12 @@ html {
         font-size: 21px;
         text-decoration: none;
         color: #fff;
+    }
+
+   
+
+    .maps-location iframe {
+        width: 100%;
     }
     
     .footer {
