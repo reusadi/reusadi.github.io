@@ -12,6 +12,11 @@
     <title>WEDDING INVITATION</title>
 </head>
 <body>
+    <!-- <div class="popup">
+        <div class="popup-content">
+            <button class="btn-primary">Buka Undangan</button>
+        </div>
+    </div> -->
     <div class="container">
         <!-- <img src="img/Depan-New-Arival-01-Atas1.png" width="100%"> -->
         <div class="main-photo">
@@ -59,21 +64,23 @@
 
             <p>Siang dan malam berganti begitu cepat, di antara saat-saat mendebarkan yang belum pernah kami rasakan sebelumnya. Kami nantikan kehadiran para keluarga dan sahabat, untuk menjadi saksi ikrar janji suci kami di hari yang bahagia.</p>
 
-            <div class="time-section">
-                <div id="days" class="value">00</div>
-                <div class="timelabel">Days</div>
-            </div>
-            <div class="time-section">
-                <div id="hours" class="value">00</div>
-                <div class="timelabel">Hours</div>
-            </div>
-            <div class="time-section">
-                <div id="minutes" class="value">00</div>
-                <div class="timelabel">Minutes</div>
-            </div>
-            <div class="time-section">
-                <div id="seconds" class="value">00</div>
-                <div class="timelabel">Seconds</div>
+            <div class="time-event">
+                <div class="time-section">
+                    <div id="days" class="value">00</div>
+                    <div class="timelabel">Days</div>
+                </div>
+                <div class="time-section">
+                    <div id="hours" class="value">00</div>
+                    <div class="timelabel">Hours</div>
+                </div>
+                <div class="time-section">
+                    <div id="minutes" class="value">00</div>
+                    <div class="timelabel">Minutes</div>
+                </div>
+                <div class="time-section">
+                    <div id="seconds" class="value">00</div>
+                    <div class="timelabel">Seconds</div>
+                </div>
             </div>
         </section>
 
@@ -104,7 +111,7 @@
                     <p>Jl. Edi Sabara No.1A, Korumba, Kec. Mandonga, Kota Kendari, Sulawesi Tenggara 93121</p>
                 </div>
                 <div class="maps-location">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.223097322781!2d122.52278311391683!3d-3.9744375971094796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98f336fa527d09%3A0xd59ee6d5a1b26e9d!2sHotel%20Zahra%20Syariah%20Kendari!5e0!3m2!1sen!2sid!4v1650181206728!5m2!1sen!2sid" width="390" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.223097322781!2d122.52278311391683!3d-3.9744375971094796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98f336fa527d09%3A0xd59ee6d5a1b26e9d!2sHotel%20Zahra%20Syariah%20Kendari!5e0!3m2!1sen!2sid!4v1650181206728!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -264,5 +271,16 @@
     </div>
     
     <script src="js/countdown.js"></script>
+    <!-- <script>
+        // var parentEl = document.querySelector("body");
+        var popup = document.querySelector(".popup");
+        var btnPrimary = document.querySelector(".btn-primary");
+
+        btnPrimary.addEventListener("click", function() {
+        //    parentEl.removeChild(parentEl.firstChild);
+            popup.classList.remove("popup");
+            popup.classList.add("popup--close");
+        })
+    </script> -->
 </body>
 </html>
