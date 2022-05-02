@@ -289,7 +289,6 @@ html {
     .container {
         width: 100%;
         margin: 0 auto;
-        height: 1000vh;
         background-color: #fff4e1;
         position: relative;
     }
