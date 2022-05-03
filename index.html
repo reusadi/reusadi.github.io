@@ -12,11 +12,22 @@
     <title>WEDDING INVITATION</title>
 </head>
 <body>
-    <!-- <div class="popup">
-        <div class="popup-content">
+    <div class="popup">
+        <div class="circle-img">
+            <img src="img/brides.png" alt="brides">
+        </div>
+        <div class="popup-text-center">
+            <h3 class="popup-brides-name">Lilla & Wandy</h3>
+            <p class="popup-date">- Senin, 09 Mei 2022 -</p>
+            <p>Kepada Bapak/Ibu/Saudara/i</p>
+            <h3 class="invitation-name"></h3>
+            <p class="small-text">*Mohon maaf bila ada kesalahan pada penulisan nama/gelar</p>
+        </div>
+        
+        <div class="btn-popup">
             <button class="btn-primary">Buka Undangan</button>
         </div>
-    </div> -->
+    </div>
     <div class="container">
         <!-- <img src="img/Depan-New-Arival-01-Atas1.png" width="100%"> -->
         <div class="main-photo">
@@ -271,16 +282,18 @@
     </div>
     
     <script src="js/countdown.js"></script>
-    <!-- <script>
-        // var parentEl = document.querySelector("body");
-        var popup = document.querySelector(".popup");
-        var btnPrimary = document.querySelector(".btn-primary");
+    <script>
+        const pObj = document.querySelector(".popup .invitation-name");
+        const params = new URLSearchParams(window.location.search);
+        pObj.innerHTML = params.get('to');
+
+        const popup = document.querySelector(".popup");
+        const btnPrimary = document.querySelector(".btn-primary");
 
         btnPrimary.addEventListener("click", function() {
-        //    parentEl.removeChild(parentEl.firstChild);
             popup.classList.remove("popup");
             popup.classList.add("popup--close");
         })
-    </script> -->
+    </script>
 </body>
 </html>

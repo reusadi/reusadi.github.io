@@ -51,10 +51,6 @@ html {
     
 }
 
-/* .brides-photo h6 {
-    font-family: 'sail';
-} */
-
 .brides-photo img {
     margin-top: 50px;
     width: 150px;
@@ -295,7 +291,7 @@ html {
 
 
 /* POP UP */
-/* .popup {
+.popup {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -303,16 +299,69 @@ html {
     z-index: 1;
 }
 
-.popup-content {
-    margin: 50vh auto;
+.popup .circle-img {
+    margin: 20px 0 0 0;
     text-align: center;
+}
+
+.popup .circle-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.popup-text-center {
+    text-align: center;
+    line-height: 2.5em;
+    padding: 0 20px;
+}
+
+.popup-brides-name {
+    font-size: 3em;
+    font-family: 'sail';
+}
+
+.popup-date {
+    font-weight: bold;
+}
+
+.invitation-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 0.7em;
+}
+
+.btn-popup {
+    margin: auto;
+    text-align: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    border: none;
+    padding: 10px;
+    background-color: #df9007;
+    color: #754a00;
+    font-weight: bold;
+    font-family: 'nunito';
+    border-radius: 8px;
+    transition: all .3s;
+}
+
+.btn-primary:hover {
+    background-color: #694301;
+    color: #e4e4e4;
+    cursor: pointer;
 }
 
 .popup--close {
     display: none;
-} */
+}
 
-/* MEDIA QUERY */
+/* ==================== MEDIA QUERY */
 @media (min-width: 280px) and (max-width: 760px) {
     .container {
         width: 100%;
@@ -447,4 +496,73 @@ html {
         font-weight: bold;
         color: #df9007;
     }
+
+
+/* ================ POP UP ================ */
+.popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffd080;
+    z-index: 1;
+}
+
+.popup .circle-img {
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.popup .circle-img img {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+}
+
+.popup-text-center {
+    text-align: center;
+    /* line-height: 2.5em; */
+    padding: 20px;
+}
+
+.small-text {
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
+
+.popup-brides-name {
+    font-size: 2.5em;
+    font-family: 'sail';
+}
+
+.popup-date {
+    font-weight: bold;
+}
+
+.invitation-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.btn-popup {
+    margin: auto;
+    text-align: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    border: none;
+    padding: 10px;
+    background-color: #df9007;
+    color: #754a00;
+    font-weight: bold;
+    font-family: 'nunito';
+    border-radius: 8px;
+    transition: all .3s;
+}
+
+.btn-primary:hover {
+    background-color: #694301;
+    color: #e4e4e4;
+    cursor: pointer;
+}
 }
